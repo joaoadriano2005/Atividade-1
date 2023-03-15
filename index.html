@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Calculo</h2>
+        <div class="input-field">
+            <input type="number" id="input1" placeholder="Km">
+            <label>Km:</label>
+        </div>
+
+        <div class="input-field">
+            <input type="number" id="input2" placeholder="Gas">
+            <label>Gas:</label>
+        </div>
+
+        <div class="center">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Consumo (km/L)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="economico">Extremamente economico</td>
+                </tr>
+                <tr>
+                    <td id="barato">economico</td>
+                </tr>
+                <tr>
+                    <td id="normal">normal</td>
+                </tr>
+                <tr>
+                    <td id="caro">Opala</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
