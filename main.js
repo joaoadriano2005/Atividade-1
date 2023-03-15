@@ -13,12 +13,12 @@ function calcular() {
     document.getElementById("barato").classList.add("hover");
     document.getElementById("normal").classList.remove("hover");
     document.getElementById("caro").classList.remove("hover");
-  } else if (consumo > 8 && consumo <= 12) {
+  } else if (consumo >= 8 && consumo <= 12) {
     document.getElementById("economico").classList.remove("hover");
     document.getElementById("barato").classList.remove("hover");
     document.getElementById("normal").classList.add("hover");
     document.getElementById("caro").classList.remove("hover");
-  } else if (consumo > 8) {
+  } else if (consumo < 8) {
     document.getElementById("economico").classList.remove("hover");
     document.getElementById("barato").classList.remove("hover");
     document.getElementById("normal").classList.remove("hover");
